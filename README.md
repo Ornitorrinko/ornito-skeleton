@@ -6,7 +6,7 @@ Ornito Alert: This is an experimental tool! Please do not use it for production 
 
 ## Getting Started
 
-Install the module with: `npm install ornito-skeleton -g`
+Install the module with: `npm install git://github.com/Ornitorrinko/ornito-skeleton.git -g`
 
 ## Documentation
 
