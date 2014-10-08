@@ -1,6 +1,6 @@
 var product = function(sequelize, DataTypes){
 	return sequelize.define("product", {
-			id: {type: DataTypes.INTEGER, primaryKey: true, allowNull : false, autoIncrement: true },name: {type: DataTypes.STRING },price: {type: DataTypes.NUMBER }
+			id: {type: DataTypes.INTEGER, primaryKey: true, allowNull : false, autoIncrement: true },name: {type: DataTypes.STRING, allowNull: false },price: {type: DataTypes.INTEGER }
 		}
 		,
 		{ 

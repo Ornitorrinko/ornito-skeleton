@@ -24,8 +24,12 @@ describe("ModelGenerator", function(){
 			expectEquals(fixture.createCommandWithAI, "productAI");
 		});
 
+		it("should create a sequelize schema with not null fields", function(){
+			expectEquals(fixture.createCommandWithNN, "productNN");
+		});
+
 		it("should create a sequelize schema with primary key and auto increment", function(){
-			expectEquals(fixture.createCommandWithBoth, "productBoth");
+			expectEquals(fixture.createCommandFull, "productBoth");
 		});
 
 		function expectEquals(command, typo){
@@ -48,7 +52,7 @@ describe("ModelGenerator", function(){
 		});
 
 		it("should parse the option '>pk>ai'", function(){
-			expectEquals(flags("both"));
+			expectEquals(flags("PKAI"));
 		});
 
 		function expectEquals(flag){
@@ -60,7 +64,7 @@ describe("ModelGenerator", function(){
 		}
 
 		function buildInvocation(flag){
-			var param = "number" + flag.key;
+			var param = "integer" + flag.key;
 			return model.parseModelOptions(param);
 		};
 	});
