@@ -48,6 +48,11 @@ To list all models
 ornito-skeleton ls
 ```
 
+## Tests
+```bash
+make
+```
+
 ## Contributing
 For now this library is in total development only ornito members are allowed to contribute
 
