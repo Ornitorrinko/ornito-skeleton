@@ -1,0 +1,21 @@
+{
+  "name": "ornito-skeleton",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "A SequelizeJS schema generator made by Ornitorrinko",
+  "homepage": "http://github.com/ornitorrinko/ornito-skeleton",
+  "bugs": "https://github.com/ornitorrinko/ornito-skeleton/issues",
+  "author": {
+    "name": "Ornitorrinko",
+    "email": "ornitorrinko@ornitorrinko.com",
+    "url": "http://ornitorrinko.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornitorrinko/ornito-skeleton"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ]
+}
