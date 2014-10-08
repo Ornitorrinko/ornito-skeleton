@@ -12,29 +12,28 @@ describe("ModelGenerator", function(){
 
 	describe("@run", function(){
 
-		it("should create a simple sequelize template", function(){
-			var command = fixture.createCommand;
-			var example = templateEngine.read(__dirname + "/fixtures/templates/", "product");
+		it("should create a simple sequelize schema template", function(){
+			expectEquals(fixture.createCommand, "product");
+		});
+
+		it("should create a sequelize schema with primary key", function(){
+			expectEquals(fixture.createCommandWithPK, "productPK");
+		});
+
+		it("should create a sequelize schema with auto increment", function(){
+			expectEquals(fixture.createCommandWithAI, "productAI");
+		});
+
+		it("should create a sequelize schema with primary key and auto increment", function(){
+			expectEquals(fixture.createCommandWithBoth, "productBoth");
+		});
+
+		function expectEquals(command, typo){
+			var example = templateEngine.read(__dirname + "/fixtures/templates/", typo);
 			var template = model.run(command);
 
 			expect(template).to.be.equal(example);
-		});
-
-		it("should create a sequelize with primary key", function(){
-			var command = fixture.createCommandWithPK;
-			var example = templateEngine.read(__dirname + "/fixtures/templates/", "productPK");
-			var template = model.run(command);
-
-			expect(template).to.be.equal(example);
-		});
-
-		it("should create a sequelize with auto increment", function(){
-			var command = fixture.createCommandWithAI;
-			var example = templateEngine.read(__dirname + "/fixtures/templates/", "productAI");
-			var template = model.run(command);
-
-			expect(template).to.be.equal(example);
-		});
+		};
 
 	});
 
