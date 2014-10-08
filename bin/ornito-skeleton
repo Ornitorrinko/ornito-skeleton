@@ -4,7 +4,7 @@
     
     console.log("Ornito Alert: This is an experimental tool! Please do not use it for production purposes");
     
-    var cli = require("./lib");
+    var cli = require("../lib");
     var action = cli.parse(args);
     var params = [].slice.call(args);
 
