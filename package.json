@@ -10,6 +10,9 @@
     "email": "ornitorrinko@ornitorrinko.com",
     "url": "http://ornitorrinko.com"
   },
+  "bin": {
+    "ornito-skeleton": "./bin/ornito-skeleton"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ornitorrinko/ornito-skeleton"
