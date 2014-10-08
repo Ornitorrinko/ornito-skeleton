@@ -17,7 +17,7 @@ _(Coming soon)_
 Initializing with your db configuration
 
 ```bash
-ornito-skeleton init -c ~/path/to/your/conf.json
+ornito-skeleton init -c ~/path/to/your/conf.json -p ~/path/to/your/project
 ```
 
 Example conf.json the attribute "db" is required:
@@ -38,7 +38,7 @@ Example conf.json the attribute "db" is required:
 To create a model schema "customer.js"
 
 ```bash
-ornito-skeleton md customer name:string document:number age:number address:string
+ornito-skeleton md customer name:string document:number age:number address:string -p ~/path/to/your/project
 ```
 
 To list all models
