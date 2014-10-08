@@ -18,4 +18,8 @@
   "files": [
     "lib"
   ]
+  , "dependencies":{
+    "sequelize": "2.0.0-rc1"
+    , "underscore": "1.7.0"
+  }
 }
