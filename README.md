@@ -38,8 +38,11 @@ Example conf.json the attribute "db" is required:
 To create a model schema "customer.js"
 
 ```bash
-ornito-skeleton md customer name:string document:number age:number address:string -p ~/path/to/your/project
+ornito-skeleton md customer id:integer>pk>ai name:string document:integer age:integer address:string -p ~/path/to/your/project
 ```
+> Add ">pk" flag to create a Primary Key field
+> Add ">ai" flag to create a Auto Increment field
+
 
 To list all models
 
