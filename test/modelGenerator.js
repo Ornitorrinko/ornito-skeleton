@@ -68,4 +68,18 @@ describe("ModelGenerator", function(){
 			return model.parseModelOptions(param);
 		};
 	});
+
+	describe("@matchSequelizeType", function(){
+		
+		it("should match the sequelize type", function(){
+			var type = model.matchSequelizeType("integer");
+			expect(type).to.be.equal("DataTypes.INTEGER");
+		});
+
+		it("should return TODO in case type is not primitive or a try for association", function(){
+			var type = model.matchSequelizeType("product");
+			expect(type).to.be.equal("DataTypes.TODO");
+		});
+
+	});
 });

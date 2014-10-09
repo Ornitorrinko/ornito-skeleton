@@ -7,19 +7,19 @@ module.exports = {
 	, "flags": {
 		"PK": {
 			"key": ">pk"
-			, "template": "INTEGER, primaryKey: true, allowNull : false"
+			, "template": "DataTypes.INTEGER, primaryKey: true, allowNull : false"
 		}
 		, "AI": {
 			"key": ">ai"
-			, "template": "INTEGER, autoIncrement: true"
+			, "template": "DataTypes.INTEGER, autoIncrement: true"
 		}
 		, "NN": {
 			"key": ">nn"
-			, "template": "INTEGER, autoIncrement: true"
+			, "template": "DataTypes.INTEGER, autoIncrement: true"
 		}
 		, "PKAI": {
 			"key": ">pk>ai"
-			, "template": "INTEGER, primaryKey: true, allowNull : false, autoIncrement: true"
+			, "template": "DataTypes.INTEGER, primaryKey: true, allowNull : false, autoIncrement: true"
 		}
 	}
 };
