@@ -22,7 +22,7 @@
     "lib"
   ]
   , "dependencies":{
-    "sequelize": "2.0.0-rc1"
+      "sequelize": ">=5.3.0"
     , "underscore": "1.7.0"
   }
   , "devDependencies": {
